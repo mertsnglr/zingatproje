@@ -1,0 +1,1 @@
+hocamız bizden 1 hafta içerisinde www.zingat.com sitesinin sadece anasayfasını kopyalamamızı istemişti yaklaşık 2 günde bitirdiğim bi proje oldu fakat "Premium Gayrimenkul Danışmanları" kısmını bir şekilde yan yana getiremedim 
