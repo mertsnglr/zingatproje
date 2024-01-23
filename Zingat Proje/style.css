@@ -1,0 +1,819 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;/* site anlamadıgım bir şekilde sağa kayıyor sebebini bulamadım çözümü bu sekilde buldum aslında çözüm değil tabiki ama sorunun kaynagını bulamadım*/
+}
+
+.main {
+    margin: auto;
+    max-width: 100%;
+    background-color: #f2fbfa;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #009cfb;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.logo {
+    padding-left: 220px;
+    padding-bottom: 20px;
+    top:2px;
+    order: 0;
+    -webkit-order: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.ortakisim {
+    position: relative;
+    height: inherit;
+    padding-right: 15px;
+    padding-left: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: auto;
+    width: 750px;
+    align-items: center;
+}
+
+.ortakisim ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ortakisim ul li {
+    float: left;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: Calibri;
+    font-weight: 600;
+}
+
+.ortakisim ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sagkisim {
+    display: flex;
+    align-items: center;
+}
+
+.sagkisim ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sagkisim ul li {
+    padding: 15px;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.ilanbuton {
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: large;
+    color: #009cfb;
+    padding-right: 10px;
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-color: white;
+}
+
+.ilanlar-card {
+    margin-bottom: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px
+}
+
+.ilanlar-card:hover {
+    border-color: #00a5fe;
+    box-shadow: 0 .1rem .1rem rgba(0,0,0,.05)
+}
+
+.ilanlar-card a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #525252
+}
+
+.ilanlar-card img {
+    width: 100%;
+    height: 152px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    object-position: center center
+}
+
+.ilanlar-card .ilanlar-card-info {
+    padding: 14px 8px 12px 8px
+}
+
+.ilanlar-card .ilanlar-card-info span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300
+}
+
+.ilanlar-card .ilanlar-card-info em {
+    display: block;
+    min-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap
+}
+
+
+.ev-projeleri-card-container {
+    float:left;
+    width: 50%
+}
+
+
+.ev-projeleri-card-container:nth-child(1) {
+    float:left;
+    width: 100%
+}
+
+
+.ev-projeleri-card-container .ev-projeleri-card {
+    display: -webkit-flex;
+    display: flex;
+    height: 350px;
+    max-height: 350px;
+    margin-bottom: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.ev-projeleri-card-container .ev-projeleri-card .ev-projeleri-card-info {
+    display: -webkit-flex;
+    display: flex;
+    padding: 40px 20px 30px 20px;
+    flex-direction: row;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start
+}
+
+
+.ev-projeleri-card-container .ev-projeleri-card .ev-projeleri-card-info span {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgba(82,82,82,.5)
+}
+
+.ev-projeleri-card-container .ev-projeleri-card .ev-projeleri-card-info strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #525252
+}
+
+.ev-projeleri-card-container .ev-projeleri-card .ev-projeleri-card-img {
+    position: relative;
+    max-height: 350px;
+    -webkit-flex: 1;
+    flex: 1
+}
+
+.ev-projeleri-card-container .ev-projeleri-card .ev-projeleri-card-img img {
+    width: 100%;
+    height: 349px;
+    max-height: 349px;
+    border-radius: 0 4px 4px 0;
+    object-fit: cover
+}
+
+.proje-incele{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 500;
+}
+
+.danısmanlar {
+    position: relative;
+    width: 100%;
+    min-width: 167px;
+    color: #787878;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none
+}
+
+.danısmanlar:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    content: '';
+    background-color: rgba(0, 0, 0, .35);
+    box-shadow: inset 30px 30px 100px rgba(0, 0, 0, .4)
+}
+
+.danısmanlar:hover:before {
+    background-color: transparent
+}
+
+.danısmanlar img {
+    min-width: 50px;
+    max-width: 100%;
+    height: 190px;
+    object-fit: cover;
+    filter: brightness(130%) grayscale(100%);
+}
+
+.danısmanlar:hover img {
+    filter: none;
+}
+
+.danısmanlar-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 13;
+    width: 100%
+}
+
+.danısmanlar-info strong {
+    display: block;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .9)
+}
+
+.danısmanlar-info span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .9);
+    text-transform: capitalize
+}
+
+.danısmanlar:hover {
+    color: #787878;
+    text-decoration: none
+}
+
+.danısmanlar:last-child {
+    margin-right: 0;
+}
+
+.container2 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+    margin-top: 33px;
+    color: #525252;
+    font-size: 39px;
+    font-family: Calibri;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.kelimearama {
+    height: 185px;
+    width: 727px;
+    margin: auto;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+.kelimearama .kutular li a {
+    color: #707070;
+    font-size: medium;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.kutular {
+    width: 750px;
+    height: 50px;
+    float: left;
+    margin-top: 15px;
+}
+
+.kutular ul li {
+    margin-top: 23px;
+    list-style: none;
+    float: left;
+    margin-left: 35px;
+    color: #808080;
+    font-size: 17px;
+}
+
+.kutular ul li a {
+    text-decoration: none;
+}
+
+.kutular ul li:hover {
+    color: #009cfb;
+}
+
+.kutuContainer {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 798px;
+}
+
+.kutubir {
+    background-color: #3cb14d;
+    height: 215px;
+    width: 246px;
+    float: left;
+    color: white;
+    margin-top: 90px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 6px 9px 0 rgba(120,120,120,.13);
+}
+
+.kutuiki {
+    margin-top: 90px;
+    background-color: #ffffff;
+    height: 215px;
+    width: 246px;
+    float: left;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 6px 9px 0 rgba(120,120,120,.13);
+}
+
+.kutuYaziUst {
+    color: white;
+    margin-left: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kutuYaziAlt {
+    margin-top:0px;
+    color: white;
+    margin-left: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    font-size:13px;
+    margin-right:5px;
+}
+
+.kutuYaziUstt {
+    color: #585555;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:65px;
+    font-size:18px;
+}
+
+.kutuYaziAltt {
+    color: #585555;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: 21px;
+}
+
+
+
+.textbox {
+    font-size: medium;
+    font-weight: 600;
+    width: calc(100% - 150px);
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 40px;
+    border: 1px solid #b4c6d5;
+    border-radius: 4px;
+    outline: 0;
+    padding: 15px;
+}
+
+.arabuton {
+    height: 40px;
+    width: 70px;
+    background-color: #009cfb;
+    border-color: #009cfb;
+    border-radius: 4px;
+    color: white;
+    box-shadow: #009cfb;
+    font-weight: 600;
+    float: right;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+.contents {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f2fbfa;
+    text-align: center;
+}
+
+.popülerarama-card-header {
+    display: inline-flex;
+    height: 350px;
+    max-height: 88px;
+    margin-bottom: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px
+}
+
+.popülerarama-card-header h3 {
+    margin: 30px 83px 24px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left
+}
+
+.popülerarama-card-header .popülerarama-card a {
+    height: 40px;
+    padding: 8px 18px 11px;
+    margin: 24px 8px 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    background-color: #e7e7e7;
+    border-radius: 20px
+}
+
+
+.içerikyazi {
+    margin: 33px auto;
+    color: #009cfb;
+    font-family: Calibri;
+    font-size: 35px;
+    float: left!important
+}
+.kurumsal {
+    height: 450px;
+    width: 100%;
+    background-color: #888c8d;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+
+.kutu {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 100px;
+    width: 200px;
+    background-color: #888c8d;
+    float: left;
+    margin-right: 20px;
+}
+
+.kutu ul li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+.uygulama {
+    color: white;
+    list-style: none;
+    line-height: 25px;
+    font-weight: 500;
+    float: right;
+    margin-left: 200px;
+}
+
+.uygulama ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.uygulama ul li {
+    margin-left: 10+px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-right: -16px;
+    margin-left: -16px
+}
+
+.container {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-menu {
+    position: relative;
+    background: #e7e7e7;
+}
+
+
+.footer-menu:before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    content: '';
+    border-bottom: 1px solid #cacaca
+}
+
+.footer-menu .footer-menu-tabs:not(.alternative-tab) {
+    margin-left: 0
+}
+
+.footer-menu [id^=tab] {
+    display: none;
+}
+
+.footer-menu input#tab1:checked~ul li.footer-birinci-content,
+section.footer-menu input#tab2:checked~ul li.footer-ikinci-content,
+section.footer-menu input#tab3:checked~ul li.footer-üçüncü-content,
+section.footer-menu input#tab4:checked~ul li.footer-dördüncü-content,
+section.footer-menu input#tab5:checked~ul li.footer-beşinci-content {
+    display: grid;
+}
+
+.footer-menu input#tab1:checked~ul {
+    -webkit-order: 2;
+    order: 2
+}
+
+.footer-menu input#tab2:checked~ul {
+    -webkit-order: 11;
+    order: 11
+}
+
+.footer-menu input#tab3:checked~ul {
+    -webkit-order: 21;
+    order: 21
+}
+
+.footer-menu input#tab4:checked~ul {
+    -webkit-order: 31;
+    order: 31
+}
+
+.footer-menu input#tab5:checked~ul {
+    -webkit-order: 41;
+    order: 41
+}
+
+.footer-menu [id^=tab]:checked+label {
+    color: #009cfb
+}
+
+.footer-menu [id^=tab]:checked+label:after {
+    top: 20px;
+    border-color: #009cfb;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.footer-menu .footer-toogle {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    height: 50px;
+    padding: 0 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    list-style-type:none;
+}
+
+.footer-menu .footer-toogle:only-of-type {
+    padding: 0
+}
+
+.footer-menu .footer-toogle.active,
+.footer-menu .footer-toogle:hover {
+    cursor: pointer
+}
+
+.footer-menu .footer-toogle:after {
+    display: none
+}
+
+.footer-menu ul#footer-menu-tabs {
+    position: relative;
+    padding: 34px 0 54px 0;
+    clear: left
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-dörüncü-content div {
+    padding-right: 5px
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content {
+    display: none;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    grid-template-columns: repeat(6, minmax(125px, 1fr));
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+    grid-column-gap: 32px
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content.auto-fill div:last-child {
+    grid-column: span 2
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 32px;
+    margin-bottom: 5px;
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content li {
+    list-style-type:none;
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content p a {
+    color: #101010
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content ul a {
+    display: block;
+    max-width: 80%;
+    overflow: hidden;
+    font-size: 13px;
+    color: #101010;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content.daily-rent-tab p+ul a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.footer-menu ul#footer-menu-tabs>li.footer-content div.no-title-section {
+    margin-top: 31px
+}
+
+.dahafazla-container .container {
+    color: rgba(82, 82, 82, .8)
+}
+
+.dahafazla-buton {
+    font-size: 13px;
+    font-weight: 500;
+    color: #525252;
+}
+
+.dahafazla-text {
+    text-decoration: none;
+    display: none;
+}
+
+.dahafazla-text h3 {
+    text-decoration: none;
+}
+
+.dahafazla-text--show {
+    display: inline;
+}
+
+.kodickısım .header-button {
+    float: right!important;
+    width: auto;
+    margin-top: 33px;
+}
+
+.pull-right {
+    float: right!important
+}
+
+footer .sosyalmedya{
+    list-style-type:none;
+    color: white;
+    float: right;
+    margin-right: 105px;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+footer {
+    height:380px;
+    max-width: 100%;
+    background-color: #888c8d;
+}
+
+footer .footer-inner li {
+    list-style-type:none;
+}
+
+footer .footer-inner p {
+    margin-left: 32px;
+    padding-top: 40px;
+}
+
+footer .footer-inner a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+footer .footer-inner li a {
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+    font-weight: 300;
+    font-size: large;
+}
+
+footer .footer-inner .contact-us {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #fff;
+    text-align: right
+}
+
+footer .footer-inner .contact-us p {
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-top: 25px;
+}
+
+footer .footer-inner .contact-us a {
+    display: block;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 350;
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+}
+
+footer .contact-us {
+    font-size: 20px;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center!important;
+}
+
+footer .contact-us>div {
+    font-size: 12px!important;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+}
